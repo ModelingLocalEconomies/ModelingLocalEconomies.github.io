@@ -81,3 +81,47 @@ footer {
     background-color: #333;
     color: white;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2em; /* Smaller text for smaller screens */
+    }
+
+    #hero {
+        flex-direction: column; /* Stack columns on top of each other */
+        align-items: center;
+    }
+
+    button {
+        padding: 8px 16px;
+        margin: 1px;
+    }
+
+    main, footer {
+        padding: 15px;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    #hero h1 {
+        font-size: 1.5em;
+    }
+
+    #hero p {
+        margin: 4px 0 15px;
+    }
+
+    button {
+        font-size: 0.8em; /* Even smaller text and buttons for very small screens */
+    }
+}
