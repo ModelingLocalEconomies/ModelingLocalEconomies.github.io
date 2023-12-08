@@ -1,8 +1,30 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero {
+  width: 100%;
+  position: relative;
+}
+
+.title-container {
+  width: 100%;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
 }
 
 /* #main-header {
@@ -13,115 +35,115 @@ body, html {
 } */
 
 .navbar {
-    height: 50px; /* Adjust height for navbar */
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    transition: height 0.3s;
-    /* ... other styling for navbar ... */
+  height: 50px; /* Adjust height for navbar */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: height 0.3s;
+  /* ... other styling for navbar ... */
 }
 
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
 #hero h1 {
-    margin: 0;
-    font-size: 2.5em;
+  margin: 0;
+  font-size: 2.5em;
 }
 
 #hero p {
-    margin: 5px 0 20px;
+  margin: 5px 0 20px;
 }
 
 button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    color: white;
-    background-color: #555;
-    cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  color: white;
+  background-color: #555;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 main {
-    padding: 20px;
-    background-color: #f4f4f4;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
 section {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: white;
 }
 
 article {
-    margin-bottom: 20px;
-    width: 30%;
+  margin-bottom: 20px;
+  width: 30%;
 }
 
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: white;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #hero h1 {
-        font-size: 2em; /* Smaller text for smaller screens */
-    }
+  #hero h1 {
+    font-size: 2em; /* Smaller text for smaller screens */
+  }
 
-    #hero {
-        flex-direction: column; /* Stack columns on top of each other */
-        align-items: center;
-    }
+  #hero {
+    flex-direction: column; /* Stack columns on top of each other */
+    align-items: center;
+  }
 
-    button {
-        padding: 8px 16px;
-        margin: 1px;
-    }
+  button {
+    padding: 8px 16px;
+    margin: 1px;
+  }
 
-    main, footer {
-        padding: 15px;
-    }
+  main,
+  footer {
+    padding: 15px;
+  }
 
-    section {
-        flex-direction: column;
-        align-items: center;
-    }
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 15px 0;
-    }
+  header {
+    padding: 15px 0;
+  }
 
-    #hero h1 {
-        font-size: 1.5em;
-    }
+  #hero h1 {
+    font-size: 1.5em;
+  }
 
-    #hero p {
-        margin: 4px 0 15px;
-    }
+  #hero p {
+    margin: 4px 0 15px;
+  }
 
-    button {
-        font-size: 0.8em; /* Even smaller text and buttons for very small screens */
-    }
+  button {
+    font-size: 0.8em; /* Even smaller text and buttons for very small screens */
+  }
 }
