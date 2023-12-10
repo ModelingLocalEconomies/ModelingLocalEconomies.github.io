@@ -13,6 +13,11 @@ html {
   justify-content: center;
 }
 
+.no-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 #hero {
   width: 100%;
   position: relative;
